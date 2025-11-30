@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Employee extends Model
+{
+    use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     * Tujuannya agar field ini bisa diisi menggunakan metode create() atau update().
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'nama_lengkap',
+        'email',
+        'nomor_telepon',
+        'tanggal_lahir',
+        'alamat',
+        'tanggal_masuk',
+        'status',
+    ];
+}
